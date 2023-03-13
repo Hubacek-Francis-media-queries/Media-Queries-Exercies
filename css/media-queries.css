@@ -1,4 +1,9 @@
-@media screen and (min-width: 365px){
+@media screen and (min-width: 365px) and (min-height: 1192px){
+
+    body {
+        margin: 15px;
+    }
+
     .hidden-on-desktop{
         max-width: 100%;
         background-color: lightblue;
@@ -37,4 +42,56 @@
     .sub-section {
         font-style: italic;
     }
+}
+
+@media screen and (min-width: 934px) and (min-height: 1210px){
+
+    body {
+        margin: 15px;
+    }
+
+    .hidden-on-desktop {
+        visibility: hidden;
+        display: inline-block;
+    }
+
+    h1 {
+        display: inline-block;
+        float: left;
+
+    }
+    nav {
+        display: inline-block;
+        float: right;
+    }
+
+    ul {
+        display: inline-block;
+    }
+
+    ul.nav-links {
+        display: flex;
+
+
+    }
+
+    li {
+        background-color: white;
+    }
+
+    #main.main {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        float: left;
+        margin-right: 40px;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+
+
+
 }
